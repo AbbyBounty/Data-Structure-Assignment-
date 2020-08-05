@@ -57,7 +57,7 @@ public:
     {
         this->head=NULL;
     }
-    void addNode(Employee emp)
+    void addLast(Employee emp)
     {
         Node *newnode=new Node(emp);
         Node *trav=head;
@@ -74,6 +74,82 @@ public:
             
         }
     }
+    
+    void addFirst(Employee emp)
+    {
+        Node *newnode=new Node(emp);
+        if(head!=NULL)
+        {
+            head=newnode;
+        }
+        else{
+            newnode->next=head;
+            head=newnode;
+        }
+    }
+    
+    void addPos(Employee emp,int pos)
+    {
+         Node *newnode=new Node(emp);
+        if(pos<=1)
+        {
+            addFirst(emp);
+            return;
+        }
+        Node *trav=head;
+        for(int i=1;i<pos-1;i++)
+        {
+            if(trav->next==NULL)
+                break;
+            trav=trav->next;
+        }
+        newnode->next=trav->next;
+        trav->next=newnode;
+    }
+    
+    void delFirst()
+    {
+        Node *temp=head;
+        if(head!=NULL)
+        {
+            head=head->next;
+            delete temp;
+        }
+    }
+    
+    void delLast()
+    {
+         Node *trav=head;
+        Node *temp;
+        while(trav->next->next!=NULL)
+        {
+            trav=trav->next;
+        }
+        temp=trav->next;
+        trav->next=NULL;
+        delete temp;
+    }
+    
+   void delPos(int pos)
+      {
+         Node* temp, *trav;
+         int i;
+         if (head == NULL || pos == 1)
+             delFirst();
+         else {
+             trav = head;
+             for (i = 1; i < pos - 1; i++) {
+                 if (trav->next == NULL)
+                     return;
+                 trav = trav->next;
+             }
+             temp = trav->next;
+             trav->next = temp->next;
+             delete temp;
+         }
+
+      }
+    
     void display()
     {
         Node *trav=head;
@@ -101,9 +177,9 @@ int main(int argc, const char * argv[]) {
     
     LinkList list;
     
-    list.addNode(employee1);
-    list.addNode(employee2);
-    list.addNode(employee3);
+    list.addLast(employee1);
+    list.addLast(employee2);
+    list.addLast(employee3);
     list.display();
     
     return 0;
