@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <stack>
 using namespace std;
 
 class Node
@@ -146,6 +147,25 @@ public:
             delete temp;
         }
     }
+    
+    
+    void reverseDisplay()
+    {
+        stack<Node*> s;
+        Node *trav=head;
+        cout<<"\n";
+       do
+        {
+            s.push(trav);
+            trav=trav->next;
+        } while(trav!=head);
+        while(!s.empty())
+        {
+        trav=s.top(); s.pop();
+        cout<<trav->data<<" ";
+        }
+        cout<<endl;
+    }
 };
 
 int main(int argc, const char * argv[]) {
@@ -158,6 +178,10 @@ int main(int argc, const char * argv[]) {
         list.addLast(100);
         list.addPos(500, 10);
         list.del_first();
+    
+    
+    
         list.display();
+    list.reverseDisplay();
     return 0;
 }
