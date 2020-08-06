@@ -21,3 +21,22 @@ PG-DAC Data Structure Assignment
         
     2. Create Link List with 10 nodes and split linklist in two seperate linklists where first linklist has all even number 
        poitions nodes and second has all odd number positions nodes.
+
+### 06 Aug
+    1. Implement Doubly Linklist with n nodes and provide folllowing Options. 
+        1. Insert Node (pos).
+        2. Delete (data).
+        3. Display.
+        4. Modify.
+        5. Print Reverse. 
+        6. Sort Rrecords.
+
+    1. Implement Circular Linklist with n nodes and provide folllowing Options.
+        1. Add Beg 
+        2. Add Mid. 
+        3. Add End 
+        4. Display
+        5.Delete Beg
+        6. Delete Mid 
+        7. Delete End
+        8. Print Reverse
