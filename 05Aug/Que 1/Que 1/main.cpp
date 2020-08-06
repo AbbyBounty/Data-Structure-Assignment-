@@ -188,6 +188,7 @@ public:
         cout<<trav->data<<" ";
         }
     }
+    
     Node* reversRecuerssion(Node *trav)
     {
         if(trav->next==NULL)
