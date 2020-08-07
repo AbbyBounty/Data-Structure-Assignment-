@@ -12,7 +12,6 @@ template<class T>
 class Node
 {
 public:
-    
     T data;
     Node *next;
     Node()
@@ -20,13 +19,11 @@ public:
         next=NULL;
         this->data=0;
     }
-    
     Node(T data)
     {
         this->data=data;
         next=NULL;
     }
-    
 };
 
 template <class T> class SinglyLinkList
@@ -52,7 +49,6 @@ public:
         cout<<endl;
     }
     
-    
     void addFirst(T data)
     {
         Node<T> *newnode= new Node<T>(data);
@@ -65,8 +61,6 @@ public:
         }
     }
     
-
-    
     void delFirst()
     {
         Node<T> *temp;
@@ -76,19 +70,14 @@ public:
             head=head->next;
             delete temp;
         }
-       
     }
-    
-
 };
  
 
 class Stack{
 private:
     SinglyLinkList<string> l;
-    
 public:
-
     void push(string data)
     {
         l.addFirst(data);
@@ -104,6 +93,7 @@ public:
         l.display();
     }
 };
+
 int main(int argc, const char * argv[]) {
    
     Stack s;
