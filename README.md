@@ -40,3 +40,13 @@ PG-DAC Data Structure Assignment
         6. Delete Mid 
         7. Delete End
         8. Print Reverse
+        
+### 07 Aug
+    1. Implement Stack Of Integer.
+    2. Implement Stack of String.
+    3. Covert following Infix Expressions to Postfix.
+    A+ B * C + D
+    (A + B) * (C + D)
+    A* B + C * D
+    A+ B + C + D
+    (A + B) * C - (D - E) * (F + G)
