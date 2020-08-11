@@ -54,3 +54,11 @@ PG-DAC Data Structure Assignment
    ### 10 Aug
     1. Implement Dynamic Stack for Book ( stack using linklist ).
     2. Accept infox expression and write a programe to convert infix to postfix 3. Write a program to convert infix expression to prefix.
+    
+    
+  ### 11 Aug  
+        1. Write a Program To Evaluate Postfix Expression. 
+        2. Implement Queue using array For employee class. 
+        3. Implement Dynamic Queue 
+        4. Implement Circular Queue.
+        5. Implement Queue Using Linklist.
