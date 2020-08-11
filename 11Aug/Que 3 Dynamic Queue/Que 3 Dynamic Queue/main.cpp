@@ -14,7 +14,7 @@ class queue
 private:
     int size;
     T *ptr;
-    int top,front;
+    int rear,front;
 public:
     queue();
     queue(int);
@@ -29,7 +29,7 @@ queue<T>::queue()
 {
     this->size=1;
     ptr=new T[this->size];
-    top=-1;
+    rear=-1;
     front=-1;
     ptr=nullptr;
 }
@@ -39,7 +39,7 @@ queue<T>::queue(int s)
 {
     this->size=s;
     ptr=new T[this->size];
-    top=-1;
+    rear=-1;
     front=-1;
     
 }
@@ -47,12 +47,12 @@ queue<T>::queue(int s)
 template<class T>
 void queue<T>::push(T s)
 {
-   if(top==(size-1))
+   if(rear==(size-1))
    cout<<"queue is full...."<<endl;
    else
    {
-       top++;
-       ptr[top]=s;
+       rear++;
+       ptr[rear]=s;
        
    }
 }
@@ -60,10 +60,10 @@ void queue<T>::push(T s)
 template<class T>
 void queue<T>::pop()
 {
-   if(front==top)
+   if(front==rear)
    {
        cout<<"queue is empty..."<<endl;
-       front=top=-1;                  //set to initial value.
+       front=rear=-1;                  //set to initial value.
    }
    else
    {
@@ -83,7 +83,7 @@ template<class T>
 void queue<T>::display()
 {
     cout<<"\t\t\t\t\t\t\t\t  QUEUE ↴↴↴ "<<endl;
-    for(int i=top;i>=(front+1);i--)
+    for(int i=rear;i>=(front+1);i--)
     cout<<"\t\t\t\t\t\t\t\t\t\t|_"<<ptr[i]<<"_|"<<endl;
     cout<<endl;
 }
