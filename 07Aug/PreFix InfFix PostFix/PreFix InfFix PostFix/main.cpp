@@ -177,7 +177,8 @@ int  preeEval(char post[])
 int main(int argc, const char * argv[]) {
 
     
-    char in[30]="5+9-4*(8-6/2)+1$(7-3)";
+    char in[30]=
+    
     char post[30]="",pre[30]="";
     
     cout<<in<<endl;
