@@ -20,12 +20,15 @@ private:
 public:
     Node()
     {
+        this->data=0;
         this->right=NULL;
         this->left=NULL;
         
     }
     Node(int data)
     {
+        this->right=NULL;
+        this->left=NULL;
         this->data=data;
         
     }
@@ -48,24 +51,24 @@ public:
         if(root==NULL)
         {
             root=newnode;
-            cout<<"root crerated ...!!!"<<endl;
+            cout<<"root created ...!!!"<<endl;
         }
         else{
             while(true)
             {
                 trav=root;
                 char ch;
-                cout<<"Add node to left or right of "<<trav->data<<endl;
+                cout<<"Add node to left or right of "<<trav->data<<": ";
                 cin>>ch;
                 if(ch=='l')
                 {
                     if(trav->left==NULL)
                     {
                         trav=newnode;
-                        cout<<"node added to left of "<<trav->data<<endl;
+                        cout<<"node added to left of "<<trav->data<<" :) "<<endl;
                         break;
                     }
-                    else
+        
                         trav=trav->left;
                 }
                else if(ch=='r')
@@ -73,10 +76,10 @@ public:
                    if(trav->right==NULL)
                    {
                        trav=newnode;
-                       cout<<"node added to right of "<<trav->data<<endl;
+                       cout<<"node added to right of "<<trav->data<<" :) "<<endl;
                        break;
                    }
-                   else
+                   
                        trav=trav->right;
                 }
                else{
@@ -151,7 +154,7 @@ int main(int argc, const char * argv[]) {
     do
     {
         
-        cout<<"1.add node\n2.preorder\n3.preorder\n4.preorder\n0.Exit"<<endl;
+        cout<<"\n1.add node\n2.preorder\n3.preorder\n4.preorder\n0.Exit\n"<<endl;
         cin>>ch;
         switch(ch)
         {
