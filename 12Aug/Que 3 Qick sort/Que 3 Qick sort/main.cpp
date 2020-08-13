@@ -8,7 +8,7 @@
 
 #include <iostream>
 using namespace std;
-void quickSort(int arr[],int left,int right)
+void quickSort(int arr[],int,size,int left,int right)
 {
     
     
@@ -25,8 +25,8 @@ void quickSort(int arr[],int left,int right)
         swap(arr[j], arr[i]);
     swap(arr[left], arr[j]);
     }
-    quickSort(arr, 5, left, j-1);
-    quickSort(arr, 5, j+1,right);
+    quickSort(arr, size, left, j-1);
+    quickSort(arr, size, j+1,right);
 }
 void display(int arr[],int size)
 {
