@@ -8,10 +8,11 @@
 
 #include <iostream>
 using namespace std;
-void quickSoert(int arr[],int size)
+void quickSort(int arr[],int size)
 {
-
     
+    quickSort(arr,left,m);
+    quickSort(arr,m+1,right);
 }
 void display(int arr[],int size)
 {
@@ -22,7 +23,7 @@ int main(int argc, const char * argv[]) {
     
     int arr[7]={5,7,2,4,1,9,3};
     
-    quickSoert(arr,7);
+    quickSort(arr,7);
     display(arr,7);
 
     return 0;
