@@ -63,3 +63,7 @@ PG-DAC Data Structure Assignment
         3. Implement Dynamic Queue 
         4. Implement Circular Queue.
         5. Implement Queue Using Linklist.
+    
+   ### 12 Aug  
+        1. Sort Array of 10 element with bubble Sort.
+        2. Write a program to sort array of 10 integer using insertion Sort. 3. write a program to sort array of 10 integer using Quick sort.
