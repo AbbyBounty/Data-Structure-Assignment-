@@ -8,7 +8,9 @@
 
 #include <iostream>
 using namespace std;
+
 void quickSort(int a[],int left,int right)
+
 {
     if(left>=right)
         return;
@@ -26,9 +28,12 @@ void quickSort(int a[],int left,int right)
             swap(a[i],a[j]);
     }
     
+
     swap(a[left],a[j]);
     quickSort(a,left, j-1);
     quickSort(a, j+1, right);
+
+
 }
 void display(int arr[],int size)
 {
