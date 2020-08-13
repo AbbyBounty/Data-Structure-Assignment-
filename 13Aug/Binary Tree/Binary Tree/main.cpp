@@ -54,9 +54,10 @@ public:
             cout<<"root created ...!!!"<<endl;
         }
         else{
+             trav=root;
             while(true)
             {
-                trav=root;
+               
                 char ch;
                 cout<<"Add node to left or right of "<<trav->data<<": ";
                 cin>>ch;
@@ -64,7 +65,7 @@ public:
                 {
                     if(trav->left==NULL)
                     {
-                        trav=newnode;
+                        trav->left=newnode;
                         cout<<"node added to left of "<<trav->data<<" :) "<<endl;
                         break;
                     }
@@ -75,7 +76,7 @@ public:
                 {
                    if(trav->right==NULL)
                    {
-                       trav=newnode;
+                       trav->right=newnode;
                        cout<<"node added to right of "<<trav->data<<" :) "<<endl;
                        break;
                    }
