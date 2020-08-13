@@ -8,11 +8,25 @@
 
 #include <iostream>
 using namespace std;
-void quickSort(int arr[],int size)
+void quickSort(int arr[],int left,int right)
 {
     
-    quickSort(arr,left,m);
-    quickSort(arr,m+1,right);
+    
+    int i=left,j=right;
+    if(left>=right)
+        return;
+    while(i<j)
+    {
+    while(i<=right && arr[i]<=arr[left])
+        i++;
+    while(arr[j]>arr[left])
+        j--;
+    if(i<j)
+        swap(arr[j], arr[i]);
+    swap(arr[left], arr[j]);
+    }
+    quickSort(arr, 5, left, j-1);
+    quickSort(arr, 5, j+1,right);
 }
 void display(int arr[],int size)
 {
@@ -23,7 +37,7 @@ int main(int argc, const char * argv[]) {
     
     int arr[7]={5,7,2,4,1,9,3};
     
-    quickSort(arr,7);
+    quickSort(arr,0,7-1);
     display(arr,7);
 
     return 0;
