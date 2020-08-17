@@ -81,3 +81,12 @@ PG-DAC Data Structure Assignment
         2. Implement Vector For employee Class.
         3. Write a program to use Stack of Person class.
 
+ ### Aug 17
+     1. Accept String and Reverse It With User Define Stack
+     2. Accept array of 20 element And Print All odd numbers using queue and all even numbers using stack
+     3. Accept two array... (two sets) and implement menu driven program for following
+        1. Uion
+        2. Insersection
+        3. union all 
+        4. A-b 
+        5. B-A
