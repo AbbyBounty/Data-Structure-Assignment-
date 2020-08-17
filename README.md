@@ -67,3 +67,7 @@ PG-DAC Data Structure Assignment
    ### 12 Aug  
         1. Sort Array of 10 element with bubble Sort.
         2. Write a program to sort array of 10 integer using insertion Sort. 3. write a program to sort array of 10 integer using Quick sort.
+        
+   ### Aug 13
+        1. Implement Binary tree with character. 
+        2. Implement Binary Search Tree With int.
