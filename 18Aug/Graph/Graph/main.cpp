@@ -97,7 +97,7 @@ public:
     }
 };
 int main(int argc, const char * argv[]) {
-    graph g(6);
+    graph g(18);
     
     g.accept();
     g.display();
