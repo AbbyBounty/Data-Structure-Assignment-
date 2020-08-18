@@ -90,3 +90,8 @@ PG-DAC Data Structure Assignment
         3. union all 
         4. A-b 
         5. B-A
+       
+   ### Aug 18
+    1.Inorder, preorder ,postorder without recursion 
+    2. Threaded Binary Tree
+    3.Graph accept ,display ,dfs,bfs
