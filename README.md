@@ -94,4 +94,8 @@ PG-DAC Data Structure Assignment
    ### Aug 18
     1.Inorder, preorder ,postorder without recursion 
     2. Threaded Binary Tree
-    3.Graph accept ,display ,dfs,bfs
+    3. Implement Graph with adjacency matrix with following options. 1. Accept Graph
+    2. Display Graph
+    3. Find InDegree
+    4. Find OutDegree.
+    5. DFS
